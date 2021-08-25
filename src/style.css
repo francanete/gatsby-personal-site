@@ -351,6 +351,16 @@ a.socialLink{
   }
 
   .bio-avatar {
-    margin-left: var(--spacing-0);
+    display: none;
+    /* margin-left: var(--spacing-0); */
+  }
+
+  a.socialLink{
+    text-decoration: none;
+    background: none;
+    padding-right: var(--spacing-4);
+    color: rgb(36, 77, 148);
+    font-size: 14px;
+    font-weight: normal;
   }
 }

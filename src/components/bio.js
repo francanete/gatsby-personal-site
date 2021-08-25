@@ -16,6 +16,7 @@ const Bio = () => {
         siteMetadata {
           author {
             name
+            alias
             summary
           }
           social {
@@ -29,6 +30,8 @@ const Bio = () => {
   // Set these values by editing "siteMetadata" in gatsby-config.js
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
+
+  const bioText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 
   return (
     <div className="bio">
@@ -44,16 +47,18 @@ const Bio = () => {
       />
       {author?.name && (
         <p>
-          Written by <strong>{author.name}</strong> {author?.summary || null}
+          Hi! I'm <strong>{author.alias},</strong> {author?.summary || null}
+          <br></br>
+          { bioText }
           {` `}<br></br>
           <hr></hr>
-          <a class="socialLink" href={`https://twitter.com/${social?.twitter || ``}`}>
+          <a className="socialLink" target="_blank" rel="noreferrer" href={`https://twitter.com/${social?.twitter || ``}`}>
             Twitter
           </a>
-          <a class="socialLink" href={`https://linkedin.com/${social?.twitter || ``}`}>
+          <a className="socialLink" target="_blank" rel="noreferrer" href={`https://www.linkedin.com/in/francanete/`}>
             LinkedIn
           </a>
-          <a class="socialLink" href={`https://github.com/${social?.twitter || ``}`}>
+          <a className="socialLink" target="_blank" rel="noreferrer" href={`https://github.com/francanete`}>
             Github
           </a>
         </p>

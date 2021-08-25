@@ -3,7 +3,8 @@ module.exports = {
     title: `FRAN CANETE`,
     author: {
       name: `Fran Canete`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      alias: `Fran`,
+      summary: `Frontend Developer.`,
     },
     description: `A starter blog demonstrating what Gatsby can do.`,
     siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
