@@ -349,4 +349,8 @@ a.socialLink{
   ol {
     list-style-position: inside;
   }
+
+  .bio-avatar {
+    margin-left: var(--spacing-0);
+  }
 }
