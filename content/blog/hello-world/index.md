@@ -26,6 +26,22 @@ You can also write code blocks here!
 const saltyDuckEgg = "chinese preserved food product"
 ```
 
+```html
+const saltyDuckEgg = "chinese preserved food product"
+<h1>Hola</h1>
+```
+
+```css
+.test {
+    color: red;
+    background: lightblue;
+}
+```
+
+```console
+const saltyDuckEgg = "chinese preserved food product"
+```
+
 | Number | Title                                    | Year |
 | :----- | :--------------------------------------- | ---: |
 | 1      | Harry Potter and the Philosopher’s Stone | 2001 |
@@ -34,19 +50,13 @@ const saltyDuckEgg = "chinese preserved food product"
 
 [View raw (TEST.md)](https://raw.github.com/adamschwartz/github-markdown-kitchen-sink/master/README.md)
 
-This is a paragraph.
 
-    This is a paragraph.
+`kjhgkjhg`
 
 # Header 1
 
 ## Header 2
 
-    Header 1
-    ========
-
-    Header 2
-    --------
 
 # Header 1
 
@@ -60,13 +70,6 @@ This is a paragraph.
 
 ###### Header 6
 
-    # Header 1
-    ## Header 2
-    ### Header 3
-    #### Header 4
-    ##### Header 5
-    ###### Header 6
-
 # Header 1
 
 ## Header 2
@@ -78,13 +81,7 @@ This is a paragraph.
 ##### Header 5
 
 ###### Header 6
-
-    # Header 1 #
-    ## Header 2 ##
-    ### Header 3 ###
-    #### Header 4 ####
-    ##### Header 5 #####
-    ###### Header 6 ######
+ ######
 
 > Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus. Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
 
@@ -97,15 +94,7 @@ This is a paragraph.
 >
 > Here's some example code:
 >
->     Markdown.generate();
-
-    > ## This is a header.
-    > 1. This is the first list item.
-    > 2. This is the second list item.
-    >
-    > Here's some example code:
-    >
-    >     Markdown.generate();
+> Markdown.generate();
 
 - Red
 - Green
@@ -160,71 +149,3 @@ This is a paragraph.
 ```
 
 Paragraph:
-
-    Code
-
-<!-- -->
-
-    Paragraph:
-
-        Code
-
----
-
----
-
----
-
----
-
----
-
-    * * *
-
-    ***
-
-    *****
-
-    - - -
-
-    ---------------------------------------
-
-This is [an example](http://example.com "Example") link.
-
-[This link](http://example.com) has no title attr.
-
-This is [an example][id] reference-style link.
-
-[id]: http://example.com "Optional Title"
-
-    This is [an example](http://example.com "Example") link.
-
-    [This link](http://example.com) has no title attr.
-
-    This is [an example] [id] reference-style link.
-
-    [id]: http://example.com "Optional Title"
-
-_single asterisks_
-
-_single underscores_
-
-**double asterisks**
-
-**double underscores**
-
-    *single asterisks*
-
-    _single underscores_
-
-    **double asterisks**
-
-    __double underscores__
-
-This paragraph has some `code` in it.
-
-    This paragraph has some `code` in it.
-
-![Alt Text](https://placehold.it/200x50 "Image Title")
-
-    ![Alt Text](https://placehold.it/200x50 "Image Title")

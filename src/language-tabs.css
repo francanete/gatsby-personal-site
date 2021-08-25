@@ -1,0 +1,214 @@
+
+
+/**
+ * If you already use line highlighting
+ */
+
+/* Adjust the position of the line numbers */
+.gatsby-highlight pre[class*="language-"].line-numbers {
+    padding-left: 2.8em;
+  }
+  
+  /**
+   * If you only want to use line numbering
+   */
+  
+  .gatsby-highlight {
+    background-color: #2b2b2b;
+    border-radius: 0.3em;
+    margin: 0.5em 0;
+    padding: 1em;
+    overflow: auto;
+    box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.351);
+    margin: 2rem auto;
+  }
+  
+  .gatsby-highlight pre[class*="language-"].line-numbers {
+    padding: 0;
+    padding-left: 2.8em;
+    overflow: initial;
+  }
+  
+  .gatsby-highlight {
+    position: relative;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .gatsby-highlight:not(:last-child) {
+    margin-top: 2rem;
+  }
+  
+  .gatsby-highlight pre[class*="language-"] {
+    -webkit-overflow-scrolling: touch;
+    padding: 1rem 0.75rem;
+    border-radius: 0.25rem;
+  }
+  .gatsby-highlight pre[class*="language-"]::before {
+    background: black;
+    border-radius: 0 0 0.25rem 0.25rem;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.025rem;
+    padding: 0.1rem 0.5rem;
+    position: absolute;
+    right: 1rem;
+    text-align: right;
+    text-transform: uppercase;
+    top: 0;
+  }
+  .gatsby-highlight pre[class~="language-javascript"]::before {
+    content: "js";
+    background: #f7df1e;
+    color: black;
+  }
+  .gatsby-highlight pre[class~="language-js"]::before {
+    content: "js";
+    background: #f7df1e;
+    color: black;
+  }
+  
+  .gatsby-highlight pre[class~="language-html"]::before {
+    content: "html";
+    background: #005a9c;
+    color: white;
+  }
+  
+  .gatsby-highlight pre[class~="language-css"]::before {
+    content: "css";
+    background: #ff9800;
+    color: white;
+  }
+  
+
+  /***/
+
+  /**
+ * prism.js tomorrow night eighties for JavaScript, CoffeeScript, CSS and HTML
+ * Based on https://github.com/chriskempson/tomorrow-theme
+ * @author Rose Pritchard
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #ccc;
+	background: none;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #2d2d2d;
+}
+
+:not(pre) > code[class*="language"], pre[class*="language-text"] {
+    background-color: rgb(244, 243, 250);
+    color: rgb(92, 92, 92);
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.block-comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #999;
+}
+
+.token.punctuation {
+	color: #ccc;
+}
+
+.token.tag,
+.token.attr-name,
+.token.namespace,
+.token.deleted {
+	color: #e2777a;
+}
+
+.token.function-name {
+	color: #6196cc;
+}
+
+.token.boolean,
+.token.number,
+.token.function {
+	color: #f08d49;
+}
+
+.token.property,
+.token.class-name,
+.token.constant,
+.token.symbol {
+	color: #f8c555;
+}
+
+.token.selector,
+.token.important,
+.token.atrule,
+.token.keyword,
+.token.builtin {
+	color: #cc99cd;
+}
+
+.token.string,
+.token.char,
+.token.attr-value,
+.token.regex,
+.token.variable {
+	color: #7ec699;
+}
+
+.token.operator,
+.token.entity,
+.token.url {
+	color: #67cdcc;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+
+.token.inserted {
+	color: green;
+}
+
+
+
+
