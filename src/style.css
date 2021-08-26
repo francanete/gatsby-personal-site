@@ -229,21 +229,19 @@ table thead tr th {
 
 /* Link */
 
-.blog-post a {
-  /* color: var(--color-primary); */
+.post-content a {
   color: #2d353d;
-  font-weight: bold;
+  font-weight: var(--fontWeight-medium);
   font-style: italic;
-  background: linear-gradient(180deg,rgba(255,255,255,0) 70%,#fed576 60%);
-  text-decoration: none;
+  background: #76b8fe2c;
+  padding: 0 3px;
+  text-decoration: underline rgba(14, 14, 14, 0.262);
 }
 
-
-
-a:hover,
-a:focus {
-  text-decoration: none;
-
+.post-content a:hover,
+.post-content a:focus {
+  background: #76b8fe72;
+  text-decoration: underline rgba(14, 14, 14, 0.358);
 }
 
 a.socialLink{
@@ -253,6 +251,7 @@ a.socialLink{
   color: rgb(36, 77, 148);
   font-size: 14px;
 }
+
 
 /* Custom classes */
 
