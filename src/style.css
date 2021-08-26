@@ -267,10 +267,13 @@ a.socialLink{
 }
 
 .global-header {
+  display: flex;
   margin-bottom: var(--spacing-12);
 }
 
 .main-heading {
+  display: flex;
+  align-items: center;
   font-size: var(--fontSize-4);
   margin: 0;
   font-weight: var(--fontWeight-bold);
@@ -305,7 +308,7 @@ a.socialLink{
 }
 
 .bio {
-  display: flex;
+  /* display: flex; */
   margin-bottom: var(--spacing-16);
 }
 
@@ -353,8 +356,8 @@ a.socialLink{
   }
 
   .bio-avatar {
-    display: none;
-    /* margin-left: var(--spacing-0); */
+    /* display: none; */
+    margin-left: var(--spacing-0);
   }
 
   a.socialLink{
