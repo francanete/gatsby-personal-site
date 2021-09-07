@@ -1,4 +1,8 @@
 import * as React from "react"
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+import { FaTwitterSquare } from 'react-icons/fa';
+
 import { useStaticQuery, graphql } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
 
@@ -47,13 +51,13 @@ const Bio = () => {
           {` `}<br></br>
           <hr></hr>
           <a className="socialLink" target="_blank" rel="noreferrer" href={`https://twitter.com/${social?.twitter || ``}`}>
-            Twitter
+          <FaTwitterSquare fill="#1C3466" size="1.2rem" />
           </a>
           <a className="socialLink" target="_blank" rel="noreferrer" href={`https://www.linkedin.com/in/francanete/`}>
-            LinkedIn
+          <FaLinkedin fill="#1C3466" size="1.2rem" />
           </a>
           <a className="socialLink" target="_blank" rel="noreferrer" href={`https://github.com/francanete`}>
-            Github
+          <FaGithub fill="#1C3466" size="1.2rem" />
           </a>
         </p>
       )}
