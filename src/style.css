@@ -1,5 +1,9 @@
 /* CSS Custom Properties Definitions */
 
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap");
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -27,9 +31,10 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-sans: Roboto, Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --fontFamily-sans: Roboto, Montserrat, system-ui, -apple-system,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+    "Noto Color Emoji";
   --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-sans);
@@ -83,8 +88,11 @@ body {
   color: var(--color-text);
 }
 
-footer {
-  padding: var(--spacing-6) var(--spacing-0);
+.footer {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: 2rem;
 }
 
 hr {
@@ -101,7 +109,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
+  font-family: "Lora", serif;
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
@@ -160,6 +168,7 @@ h6 > a {
 /* Prose */
 
 p {
+  font-size: 1.2rem;
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
@@ -244,7 +253,7 @@ table thead tr th {
   text-decoration: underline rgba(14, 14, 14, 0.358);
 }
 
-a.socialLink{
+a.socialLink {
   text-decoration: none;
   background: none;
   padding-right: var(--spacing-4);
@@ -252,12 +261,12 @@ a.socialLink{
   font-size: 14px;
 }
 
-
 /* Custom classes */
 
 .global-wrapper {
   margin: var(--spacing-0) auto;
-  max-width: var(--maxWidth-wrapper);
+  /* max-width: var(--maxWidth-wrapper); */
+  max-width: 900px;
   padding: var(--spacing-10) var(--spacing-5);
 }
 
@@ -268,6 +277,91 @@ a.socialLink{
 .global-header {
   display: flex;
   margin-bottom: var(--spacing-12);
+}
+
+/* Addition */
+
+nav {
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
+  /* margin: 40px auto; */
+  padding-bottom: 30px;
+}
+nav .links {
+  display: inline-block;
+}
+nav a {
+  /* display: inline-block; */
+  /* flex-flow: wrap; */
+  text-decoration: none;
+  color: black;
+  /* margin-left: 10px; */
+  /* font-weight: 400; */
+  padding-bottom: 10px;
+  /* border-bottom: 3px solid transparent; */
+}
+nav a:not(:first-child) {
+  margin-left: 10px;
+}
+
+.navBar-ly {
+  color: red;
+}
+
+.header {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 5rem;
+  padding: 0;
+  background-color: #ebedf2;
+  height: 100vh;
+}
+.header.section {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #ebedf2;
+  height: 40vh;
+}
+
+.header-title {
+  /* font-family: "Lora", serif; */
+  font-size: 3rem;
+  margin-bottom: 30px;
+}
+
+.recent {
+  font-family: "Lora", serif;
+  font-style: italic;
+  font-size: var(--spacing-6);
+  text-align: center;
+}
+
+.header-title.section {
+  font-size: 2rem;
+  text-decoration: none;
+  /* margin-top: 10px; */
+  margin-bottom: 5px;
+}
+
+.section-name {
+  font-family: "Lora", serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.bio-header {
+  max-width: 900px;
+  font-size: 1.7rem;
+  line-height: 1.4;
 }
 
 .main-heading {
@@ -281,6 +375,14 @@ a.socialLink{
 .post-list-item {
   margin-bottom: var(--spacing-8);
   margin-top: var(--spacing-8);
+}
+
+.latest-posts {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 900px;
 }
 
 .post-list-item p {
@@ -303,7 +405,7 @@ a.socialLink{
   font-family: var(--font-heading);
   text-decoration: none;
   font-size: var(--fontSize-2);
-  color:#1a202c;
+  color: #1a202c;
 }
 
 .bio {
@@ -327,6 +429,12 @@ a.socialLink{
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
   font-size: var(--fontSize-5);
   font-weight: var(--fontWeight-bold);
+}
+
+.posts-headline {
+  font-family: "Lora", serif;
+  margin-top: 0;
+  font-weight: 400;
 }
 
 .blog-post header p {
@@ -354,12 +462,24 @@ a.socialLink{
     list-style-position: inside;
   }
 
+  .header {
+    /* font-size: 1.5rem; */
+    padding: 13rem 9vh;
+  }
+  .header-title {
+    font-size: 1.7rem;
+  }
+
+  .bio-header {
+    font-size: 1rem;
+  }
+
   .bio-avatar {
     /* display: none; */
     margin-left: var(--spacing-0);
   }
 
-  a.socialLink{
+  a.socialLink {
     text-decoration: none;
     background: none;
     padding-right: var(--spacing-4);

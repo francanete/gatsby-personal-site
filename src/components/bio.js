@@ -1,11 +1,10 @@
 import * as React from "react"
-import { FaLinkedin } from 'react-icons/fa';
-import { FaGithub } from 'react-icons/fa';
-import { FaTwitterSquare } from 'react-icons/fa';
+import { FaLinkedin } from "react-icons/fa"
+import { FaGithub } from "react-icons/fa"
+import { FaTwitterSquare } from "react-icons/fa"
 
 import { useStaticQuery, graphql } from "gatsby"
 // import { StaticImage } from "gatsby-plugin-image"
-
 
 const Bio = () => {
   const data = useStaticQuery(graphql`
@@ -29,7 +28,8 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
 
-  const bioText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
+  const bioText =
+    "Lorem P ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
   return (
     <div className="bio">
@@ -45,19 +45,35 @@ const Bio = () => {
       /> */}
       {author?.name && (
         <p>
-        <strong>Hi! I'm {author.alias},</strong> 
+          <strong className="recent">Frontend Developer.</strong>
           <br></br>
-          { bioText }
-          {` `}<br></br>
+          {bioText}
+          {` `}
+          <br></br>
           <hr></hr>
-          <a className="socialLink" target="_blank" rel="noreferrer" href={`https://twitter.com/${social?.twitter || ``}`}>
-          <FaTwitterSquare fill="#1C3466" size="1.2rem" />
+          <a
+            className="socialLink"
+            target="_blank"
+            rel="noreferrer"
+            href={`https://twitter.com/${social?.twitter || ``}`}
+          >
+            <FaTwitterSquare fill="#1C3466" size="1.2rem" />
           </a>
-          <a className="socialLink" target="_blank" rel="noreferrer" href={`https://www.linkedin.com/in/francanete/`}>
-          <FaLinkedin fill="#1C3466" size="1.2rem" />
+          <a
+            className="socialLink"
+            target="_blank"
+            rel="noreferrer"
+            href={`https://www.linkedin.com/in/francanete/`}
+          >
+            <FaLinkedin fill="#1C3466" size="1.2rem" />
           </a>
-          <a className="socialLink" target="_blank" rel="noreferrer" href={`https://github.com/francanete`}>
-          <FaGithub fill="#1C3466" size="1.2rem" />
+          <a
+            className="socialLink"
+            target="_blank"
+            rel="noreferrer"
+            href={`https://github.com/francanete`}
+          >
+            <FaGithub fill="#1C3466" size="1.2rem" />
           </a>
         </p>
       )}

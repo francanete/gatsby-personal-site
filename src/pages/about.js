@@ -1,7 +1,6 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Header from "../components/header"
-import Footer from "../components/Footer"
 
 const About = ({ data }) => {
   const posts = data.postMd.nodes
@@ -10,7 +9,7 @@ const About = ({ data }) => {
     <React.Fragment>
       <Header />
       <div className="latest-posts">
-        <p className="recent">— Recent posts</p>
+        <h2>—— Recent posts</h2>
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug
@@ -45,7 +44,7 @@ const About = ({ data }) => {
         </ol>
       </div>
       <div className="latest-posts">
-        <p className="recent">— Projects</p>
+        <h2>—— Recent projects</h2>
         <ol style={{ listStyle: `none` }}>
           {projects.map(project => {
             const title = project.frontmatter.title || project.fields.slug
@@ -81,7 +80,10 @@ const About = ({ data }) => {
         </ol>
       </div>
 
-      <Footer />
+      <footer>
+        © {new Date().getFullYear()}, Fran Canete
+        {` `}
+      </footer>
     </React.Fragment>
   )
 }

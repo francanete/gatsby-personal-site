@@ -1,7 +1,7 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
+import NavBar from "./NavBar"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -27,16 +27,16 @@ const Layout = ({ location, title, children }) => {
   } else {
     header = (
       <div className="main-heading">
-        <StaticImage
-            className="bio-avatar"
-            layout="fixed"
-            formats={["AUTO", "WEBP", "AVIF"]}
-            src="../images/logo.png"
-            width={50}
-            height={50}
-            quality={95}
-            alt="Profile picture"
-          />
+        {/* <StaticImage
+          className="bio-avatar"
+          layout="fixed"
+          formats={["AUTO", "WEBP", "AVIF"]}
+          src="../images/logo.png"
+          width={50}
+          height={50}
+          quality={95}
+          alt="Profile picture"
+        /> */}
         <Link className="header-link-home" to="/">
           {title}
         </Link>
@@ -47,6 +47,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <div className="global-wrapper" data-is-root-path={isRootPath}>
       <header className="global-header">{header}</header>
+      <NavBar />
       <main>{children}</main>
       <footer>
         © {new Date().getFullYear()}, Fran Canete

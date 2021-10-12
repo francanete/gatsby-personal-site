@@ -1,8 +1,8 @@
 ---
-title: Hello World
-date: "2015-05-01T22:12:03.284Z"
-description: "Hello World"
-tag: "article"
+title: My first project
+date: "2021-10-01"
+description: "This is my first project and I used GraphLQ"
+tag: "project"
 ---
 
 This is my first post on my new fake blog! How exciting!
