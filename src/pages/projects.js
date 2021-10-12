@@ -19,7 +19,7 @@ const Projects = ({ data }) => {
         <NavBar />
         <span className="section-name">Projects</span>
       </div>
-      <Seo title="Projects" />
+      <Seo title="All Projects" />
       <div className="global-wrapper">
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
