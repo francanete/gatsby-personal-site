@@ -19,7 +19,6 @@ const BlogIndex = ({ data, location }) => {
         <NavBar />
         <span className="section-name">Latest blogs</span>
       </div>
-      <Seo title="All posts" />
       <div className="global-wrapper">
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
