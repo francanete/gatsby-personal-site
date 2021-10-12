@@ -8,6 +8,7 @@ const About = ({ data }) => {
   const projects = data.projectMd.nodes
   return (
     <React.Fragment>
+      <Seo title="Fran Canete" />
       <Header />
       <div className="latest-posts">
         <p className="recent">— Recent posts</p>
