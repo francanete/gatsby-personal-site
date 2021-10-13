@@ -443,6 +443,8 @@ nav a:not(:first-child) {
 }
 
 .blog-post-nav ul {
+  width: 100%;
+  justify-content: space-between;
   margin: var(--spacing-0);
 }
 
