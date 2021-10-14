@@ -364,6 +364,10 @@ nav a:not(:first-child) {
   line-height: 1.4;
 }
 
+.bio-header p {
+  font-size: 1.7rem;
+}
+
 .main-heading {
   display: flex;
   align-items: center;

@@ -7,7 +7,7 @@ tag: ""
 
 This way, you keep all your projects organised, easy to share with others and collaborate, and of course, keep track of the different versions of your app.
 
-```
+```shell
 git init
 ```
 
