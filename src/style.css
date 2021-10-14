@@ -387,6 +387,7 @@ nav a:not(:first-child) {
   justify-content: center;
   margin: 0 auto;
   max-width: 900px;
+  padding: 0 12px;
 }
 
 .post-list-item p {
@@ -474,6 +475,10 @@ nav a:not(:first-child) {
   }
   .header-title {
     font-size: 1.7rem;
+  }
+
+  .bio-header p {
+    font-size: 1rem;
   }
 
   .bio-header {
