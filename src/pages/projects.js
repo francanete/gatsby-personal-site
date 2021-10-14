@@ -19,7 +19,7 @@ const Projects = ({ data }) => {
         <NavBar />
         <span className="section-name">Projects</span>
       </div>
-      <div className="global-wrapper">
+      <div className="posts-wrapper">
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug

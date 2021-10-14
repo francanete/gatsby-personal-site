@@ -29,7 +29,7 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
-      <div className="global-wrapper">
+      <div className="posts-wrapper">
         <article
           className="blog-post"
           itemScope
