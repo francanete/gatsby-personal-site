@@ -359,13 +359,13 @@ nav a:not(:first-child) {
 }
 
 .bio-header {
-  max-width: 900px;
+  max-width: 700px;
   font-size: 1.7rem;
   line-height: 1.4;
 }
 
 .bio-header p {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
 }
 
 .main-heading {

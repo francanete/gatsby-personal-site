@@ -28,9 +28,22 @@ const Bio = () => {
   const author = data.site.siteMetadata?.author
   const social = data.site.siteMetadata?.social
 
-  const bioText =
-    "Lorem P ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-
+  const bioText = (
+    <>
+      <p>
+        <strong>Frontend Developer</strong> based in Manchester, UK.
+      </p>
+      <p>
+        I'm passionate about delivering best-in-class client-centric web
+        applications that truly solve user problems.
+      </p>
+      <br />
+      <p>
+        Currently working with React, Next.js, Gatsby, Typescript, GraphQL,
+        Node.js
+      </p>
+    </>
+  )
   return (
     <div className="bio">
       {/* <StaticImage
@@ -45,8 +58,8 @@ const Bio = () => {
       /> */}
       {author?.name && (
         <p>
-          <strong className="recent">Frontend Developer.</strong>
-          <br></br>
+          {/* <strong className="recent">Frontend Developer.</strong> */}
+          {/* <br></br> */}
           {bioText}
           {` `}
           <br></br>
