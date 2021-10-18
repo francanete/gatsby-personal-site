@@ -282,7 +282,7 @@ a.socialLink {
 /* Addition */
 
 .logo span {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -348,9 +348,6 @@ nav .logo {
 }
 
 .header-title {
-  /* font-family: "Montserrat", serif; */
-  font-weight: 600;
-  color: rgb(45, 45, 45);
   font-size: 3rem;
   margin-bottom: 30px;
 }
@@ -360,13 +357,6 @@ nav .logo {
   font-style: italic;
   font-size: var(--spacing-6);
   text-align: center;
-}
-
-.header-title.section {
-  font-size: 2rem;
-  text-decoration: none;
-  /* margin-top: 10px; */
-  margin-bottom: 5px;
 }
 
 .section-name {
@@ -520,10 +510,6 @@ nav .logo {
 
   .header-wraper {
     height: fit-content;
-  }
-
-  .logo span {
-    font-size: 1rem;
   }
 
   .header-title {
