@@ -2,7 +2,6 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/Footer"
-import Seo from "../components/seo"
 
 const About = ({ data }) => {
   const posts = data.postMd.nodes

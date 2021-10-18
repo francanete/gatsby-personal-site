@@ -1,12 +1,11 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Seo from "../components/seo"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 
 const BlogIndex = ({ data, location }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   return (

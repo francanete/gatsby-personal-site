@@ -37,7 +37,7 @@ const Bio = () => {
         I'm passionate about delivering best-in-class client-centric web
         applications that truly solve user problems.
       </p>
-      <br />
+      {/* <br /> */}
       <p>
         Currently working with React, Next.js, Gatsby, Typescript, GraphQL,
         Node.js
@@ -46,49 +46,36 @@ const Bio = () => {
   )
   return (
     <div className="bio">
-      {/* <StaticImage
-        className="bio-avatar"
-        layout="fixed"
-        formats={["AUTO", "WEBP", "AVIF"]}
-        src="../images/logo.png"
-        width={50}
-        height={50}
-        quality={95}
-        alt="Profile picture"
-      /> */}
       {author?.name && (
-        <p>
-          {/* <strong className="recent">Frontend Developer.</strong> */}
-          {/* <br></br> */}
+        <div>
           {bioText}
-          {` `}
-          <br></br>
-          <hr></hr>
-          <a
-            className="socialLink"
-            target="_blank"
-            rel="noreferrer"
-            href={`https://twitter.com/${social?.twitter || ``}`}
-          >
-            <FaTwitterSquare fill="#1C3466" size="1.2rem" />
-          </a>
-          <a
-            className="socialLink"
-            target="_blank"
-            rel="noreferrer"
-            href={`https://www.linkedin.com/in/francanete/`}
-          >
-            <FaLinkedin fill="#1C3466" size="1.2rem" />
-          </a>
-          <a
-            className="socialLink"
-            target="_blank"
-            rel="noreferrer"
-            href={`https://github.com/francanete`}
-          >
-            <FaGithub fill="#1C3466" size="1.2rem" />
-          </a>
-        </p>
+          <div className="bio-icons">
+            <a
+              className="socialLink"
+              target="_blank"
+              rel="noreferrer"
+              href={`https://twitter.com/${social?.twitter || ``}`}
+            >
+              <FaTwitterSquare fill="#1C3466" size="1.2rem" />
+            </a>
+            <a
+              className="socialLink"
+              target="_blank"
+              rel="noreferrer"
+              href={`https://www.linkedin.com/in/francanete/`}
+            >
+              <FaLinkedin fill="#1C3466" size="1.2rem" />
+            </a>
+            <a
+              className="socialLink"
+              target="_blank"
+              rel="noreferrer"
+              href={`https://github.com/francanete`}
+            >
+              <FaGithub fill="#1C3466" size="1.2rem" />
+            </a>
+          </div>
+        </div>
       )}
     </div>
   )

@@ -1,10 +1,8 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 
-import Seo from "../components/seo"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
-import Layout from "../components/layout"
 
 const Projects = ({ data }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
