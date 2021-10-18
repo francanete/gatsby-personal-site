@@ -348,7 +348,9 @@ nav .logo {
 }
 
 .header-title {
-  /* font-family: "Lora", serif; */
+  /* font-family: "Montserrat", serif; */
+  font-weight: 600;
+  color: rgb(45, 45, 45);
   font-size: 3rem;
   margin-bottom: 30px;
 }
