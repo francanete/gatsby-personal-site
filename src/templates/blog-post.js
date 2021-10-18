@@ -3,7 +3,6 @@ import { Link, graphql } from "gatsby"
 import NavBar from "../components/NavBar"
 
 import Bio from "../components/bio"
-import Layout from "../components/layout"
 import Seo from "../components/seo"
 
 const BlogPostTemplate = ({ data, location }) => {
