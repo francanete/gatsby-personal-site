@@ -7,7 +7,7 @@ export default function NavBar() {
       <nav>
         <div className="logo">
           <Link to="/">
-            <span>Fran Canete</span>
+            <span>FRAN CANETE</span>
           </Link>
         </div>
         <div className="links">
