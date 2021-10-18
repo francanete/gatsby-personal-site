@@ -10,7 +10,7 @@ const About = ({ data }) => {
   return (
     <React.Fragment>
       <Header />
-      <div className="latest-posts">
+      <div className="latest-posts projects">
         <p className="recent">— Projects</p>
         <ol style={{ listStyle: `none` }}>
           {projects.map(project => {
@@ -47,7 +47,7 @@ const About = ({ data }) => {
         </ol>
       </div>
       <div className="latest-posts">
-        <p className="recent">— Recent posts</p>
+        <p className="recent">— Recent articles</p>
         <ol style={{ listStyle: `none` }}>
           {posts.map(post => {
             const title = post.frontmatter.title || post.fields.slug

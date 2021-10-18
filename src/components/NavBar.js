@@ -3,12 +3,19 @@ import React from "react"
 
 export default function NavBar() {
   return (
-    <nav>
-      <div className="links">
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/blog">Blog</Link>
-      </div>
-    </nav>
+    <div className="nav-wraper">
+      <nav>
+        <div className="logo">
+          <Link to="/">
+            <span>Fran Canete</span>
+          </Link>
+        </div>
+        <div className="links">
+          <Link to="/about">About</Link>
+          <Link to="/projects">Projects</Link>
+          <Link to="/blog">Articles</Link>
+        </div>
+      </nav>
+    </div>
   )
 }

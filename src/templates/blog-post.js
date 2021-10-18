@@ -13,12 +13,8 @@ const BlogPostTemplate = ({ data, location }) => {
 
   return (
     <React.Fragment>
-      <div className="header section">
-        <Link to="/">
-          <h1 className="header-title section">Fran Canete</h1>
-        </Link>
-
-        <NavBar />
+      <NavBar />
+      <div className="post-title">
         <header>
           <h1 className="posts-headline">{post.frontmatter.title}</h1>
           <p>Updated: {post.frontmatter.date}</p>

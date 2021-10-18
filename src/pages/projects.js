@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Seo from "../components/seo"
 import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
+import Layout from "../components/layout"
 
 const Projects = ({ data }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -11,13 +12,10 @@ const Projects = ({ data }) => {
 
   return (
     <React.Fragment>
+      <NavBar />
       <div className="header section">
-        <Link to="/" className="header-title section">
-          <h1>Fran Canete</h1>
-        </Link>
-
-        <NavBar />
         <span className="section-name">Projects</span>
+        <p>This is a text where I explain what my projects are about.</p>
       </div>
       <div className="posts-wrapper">
         <ol style={{ listStyle: `none` }}>

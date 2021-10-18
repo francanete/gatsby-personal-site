@@ -281,18 +281,26 @@ a.socialLink {
 
 /* Addition */
 
-nav {
-  display: flex;
-  /* grid-template-columns: 1fr 1fr; */
-  /* margin: 40px auto; */
-  padding-bottom: 30px;
+.logo span {
+  font-size: 1.3rem;
+  font-weight: bold;
 }
-nav .links {
-  display: inline-block;
+
+.nav-wraper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 0 auto 80px;
+  padding: 20px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* margin-bottom: 10rem; */
 }
 nav a {
-  /* display: inline-block; */
-  /* flex-flow: wrap; */
+  margin-left: 12px;
   text-decoration: none;
   color: black;
   /* margin-left: 10px; */
@@ -300,8 +308,8 @@ nav a {
   padding-bottom: 10px;
   /* border-bottom: 3px solid transparent; */
 }
-nav a:not(:first-child) {
-  margin-left: 10px;
+nav .logo {
+  margin-right: auto;
 }
 
 .navBar-ly {
@@ -317,8 +325,14 @@ nav a:not(:first-child) {
   margin: 0;
   margin-bottom: 5rem;
   padding: 0;
+  /* background-color: #ebedf2; */
+  /* height: 100vh; */
+}
+
+.header-wraper {
   background-color: #ebedf2;
   height: 100vh;
+  margin-bottom: 5rem;
 }
 .header.section {
   display: flex;
@@ -326,10 +340,10 @@ nav a:not(:first-child) {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin: 0;
+  margin: 5rem auto 0;
   padding: 0;
-  background-color: #ebedf2;
-  height: 40vh;
+  max-width: 450px;
+  /* height: 5vh; */
 }
 
 .header-title {
@@ -354,8 +368,8 @@ nav a:not(:first-child) {
 
 .section-name {
   font-family: "Lora", serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-weight: bold;
+  font-size: 2rem;
 }
 
 .bio-header {
@@ -385,7 +399,7 @@ nav a:not(:first-child) {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0 auto 5rem;
   max-width: 900px;
   padding: 0 12px;
 }
@@ -428,6 +442,17 @@ nav a:not(:first-child) {
   min-width: 50px;
   border-radius: 100%;
   margin-left: -63px;
+}
+
+.post-title {
+  /* display: flex; */
+  /* flex-flow: column; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  margin: 5rem auto 0;
+  padding: 0;
+  max-width: 600px;
 }
 
 .blog-post header h1 {

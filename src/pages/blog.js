@@ -11,13 +11,10 @@ const BlogIndex = ({ data, location }) => {
 
   return (
     <React.Fragment>
+      <NavBar />
       <div className="header section">
-        <Link to="/" className="header-title section">
-          <h1>Fran Canete</h1>
-        </Link>
-
-        <NavBar />
-        <span className="section-name">Latest blogs</span>
+        <span className="section-name">Latest articles</span>
+        <p>This is a text where I explain what my projects are about.</p>
       </div>
       <div className="posts-wrapper">
         <ol style={{ listStyle: `none` }}>
