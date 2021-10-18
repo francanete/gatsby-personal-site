@@ -501,10 +501,24 @@ nav .logo {
     list-style-position: inside;
   }
 
-  .header {
-    /* font-size: 1.5rem; */
-    padding: 13rem 9vh;
+  .links {
+    margin-right: 12px;
   }
+
+  nav {
+    margin-bottom: 0;
+  }
+
+  .header {
+    font-size: 1.5rem;
+    padding: 0 20px;
+    /* height: 100vh; */
+  }
+
+  .header-wraper {
+    height: fit-content;
+  }
+
   .header-title {
     font-size: 1.7rem;
   }
