@@ -1,135 +1,35 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 import Header from "../components/header"
+import * as aboutStyles from "../styles/About.module.css"
+import Footer from "../components/Footer"
+import NavBar from "../components/NavBar"
+import { StaticImage } from "gatsby-plugin-image"
 
-const About = ({ data }) => {
-  const posts = data.postMd.nodes
-  const projects = data.projectMd.nodes
+const About = () => {
   return (
     <React.Fragment>
-      <Header />
-      <div className="latest-posts">
-        <h2>—— Recent posts</h2>
-        <ol style={{ listStyle: `none` }}>
-          {posts.map(post => {
-            const title = post.frontmatter.title || post.fields.slug
-
-            return (
-              <li key={post.fields.slug}>
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <header>
-                    <h2>
-                      <Link to={post.fields.slug} itemProp="url">
-                        <span itemProp="headline">{title}</span>
-                      </Link>
-                    </h2>
-                    <small>{post.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html: post.frontmatter.description || post.excerpt,
-                      }}
-                      itemProp="description"
-                    />
-                  </section>
-                </article>
-              </li>
-            )
-          })}
-        </ol>
-      </div>
-      <div className="latest-posts">
-        <h2>—— Recent projects</h2>
-        <ol style={{ listStyle: `none` }}>
-          {projects.map(project => {
-            const title = project.frontmatter.title || project.fields.slug
-
-            return (
-              <li key={project.fields.slug}>
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <header>
-                    <h2>
-                      <Link to={project.fields.slug} itemProp="url">
-                        <span itemProp="headline">{title}</span>
-                      </Link>
-                    </h2>
-                    <small>{project.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          project.frontmatter.description || project.excerpt,
-                      }}
-                      itemProp="description"
-                    />
-                  </section>
-                </article>
-              </li>
-            )
-          })}
-        </ol>
+      <NavBar />
+      <div className={aboutStyles.aboutWraper}>
+        <h2>About</h2>
+        <div class={aboutStyles.container}>
+          <div className={aboutStyles.column1}>
+            <StaticImage
+              src="../images/francanete.jpeg"
+              alt="fran canete"
+              className={aboutStyles.image}
+            />
+            <h1>Column 1</h1>
+          </div>
+          <div className={aboutStyles.column2}>
+            <p>Hello, I'm Fran.</p>
+          </div>
+        </div>
       </div>
 
-      <footer>
-        © {new Date().getFullYear()}, Fran Canete
-        {` `}
-      </footer>
+      <Footer />
     </React.Fragment>
   )
 }
 
 export default About
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    postMd: allMarkdownRemark(
-      filter: { frontmatter: { tag: { ne: "project" } } }
-      limit: 3
-      sort: { fields: [frontmatter___date], order: DESC }
-    ) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          date(formatString: "MMMM DD, YYYY")
-          title
-          description
-        }
-      }
-    }
-    projectMd: allMarkdownRemark(
-      filter: { frontmatter: { tag: { eq: "project" } } }
-      limit: 3
-      sort: { fields: frontmatter___date, order: DESC }
-    ) {
-      nodes {
-        excerpt
-        fields {
-          slug
-        }
-        frontmatter {
-          description
-          tag
-          title
-        }
-      }
-    }
-  }
-`

@@ -311,14 +311,14 @@ nav .logo {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-top: 20%;
+  /* margin-top: 20%; */
+  vertical-align: center;
   margin-bottom: 5rem;
-  padding: 0;
 }
 
 .header-wraper {
   background-color: #ebedf2;
-  height: 100vh;
+  /* height: 50vh; */
   margin-bottom: 5rem;
 }
 

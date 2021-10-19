@@ -1,0 +1,27 @@
+.aboutWraper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.column1 {
+  background-color: rgb(223, 223, 223);
+  margin: 5px;
+}
+
+.column2 {
+  background-color: rgb(198, 198, 198);
+  margin: 5px;
+}
+
+.image {
+  border-radius: 3%;
+  object-fit: cover;
+  width: 90%;
+  max-height: 100%;
+}
