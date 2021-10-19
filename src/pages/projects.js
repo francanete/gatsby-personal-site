@@ -5,7 +5,7 @@ import NavBar from "../components/NavBar"
 import Footer from "../components/Footer"
 
 const Projects = ({ data }) => {
-  const siteTitle = data.site.siteMetadata?.title || `Title`
+  // const siteTitle = data.site.siteMetadata?.title || `Title`
   const posts = data.allMarkdownRemark.nodes
 
   return (

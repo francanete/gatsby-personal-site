@@ -303,6 +303,7 @@ nav a {
 
 nav .logo {
   margin-right: auto;
+  margin-left: -12px;
 }
 
 .header {
@@ -313,6 +314,7 @@ nav .logo {
   text-align: center;
   /* margin-top: 20%; */
   vertical-align: center;
+  padding: 3rem 0;
   margin-bottom: 5rem;
 }
 
