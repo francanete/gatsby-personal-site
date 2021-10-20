@@ -1,6 +1,7 @@
 .aboutWraper {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 7px;
 }
 
 .container {
@@ -22,7 +23,7 @@
 .image {
   border-radius: 3%;
   object-fit: cover;
-  width: 90%;
+  width: 100%;
   max-height: 100%;
 }
 
