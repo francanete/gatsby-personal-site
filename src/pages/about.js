@@ -24,14 +24,19 @@ const About = () => {
           </div>
           <div className={aboutStyles.column2}>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit
-              amet consectetur adipiscing elit ut aliquam purus sit. Risus
-              pretium quam vulputate dignissim. Morbi tincidunt ornare massa
-              eget egestas purus viverra accumsan in. Morbi non arcu risus quis
-              varius quam quisque. Lorem donec massa sapien faucibus et
-              molestie. Scelerisque mauris pellentesque pulvinar pellentesque
-              habitant morbi tristique senectus et.
+              After 13 years of professional experience in finance and as a
+              small business owner, I am a software developer with a unique
+              holistic perspective that allows me to go beyond writing code.
+            </p>
+            <p>
+              Understanding the real needs of the market, listening to the users
+              pain point and developing solutions that truly solves their
+              problems is my personal mission.
+            </p>
+            <p>
+              My transition from business to software development has been an
+              inspiring journey to fulfil this purpose of creating products that
+              serve the market, not the other way around.
             </p>
           </div>
         </div>
