@@ -10,7 +10,7 @@ const About = ({ data }) => {
     <React.Fragment>
       <Header />
       <div className="latest-posts projects">
-        <p className="recent">— Projects</p>
+        <p className="recent">— Projects:</p>
         <ol style={{ listStyle: `none` }}>
           {projects.map(project => {
             const title = project.frontmatter.title || project.fields.slug
