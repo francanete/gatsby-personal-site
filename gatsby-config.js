@@ -12,6 +12,7 @@ module.exports = {
       twitter: `francanetecom`,
     },
   },
+  plugins: [`gatsby-plugin-dark-mode`],
   plugins: [`gatsby-plugin-netlify-cms`],
   plugins: [
     `gatsby-plugin-image`,

@@ -26,8 +26,8 @@
     "gatsby-transformer-remark": "^4.7.0",
     "gatsby-transformer-sharp": "^3.10.0",
     "prismjs": "^1.24.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
     "react-helmet": "^6.1.0",
     "react-icons": "^4.2.0",
     "typeface-merriweather": "0.0.72",
@@ -35,6 +35,10 @@
     "typeface-roboto": "^1.1.13"
   },
   "devDependencies": {
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "gatsby-plugin-dark-mode": "^1.1.2",
     "prettier": "2.3.2"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",

@@ -2,12 +2,26 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/Footer"
+import { ThemeToggler } from "gatsby-plugin-dark-mode"
 
 const About = ({ data }) => {
   const posts = data.postMd.nodes
   const projects = data.projectMd.nodes
   return (
-    <React.Fragment>
+    <>
+      <ThemeToggler>
+        {({ theme, toggleTheme }) => (
+          <label>
+            <input
+              type="checkbox"
+              onChange={e => toggleTheme(e.target.checked ? "dark" : "light")}
+              checked={theme === "dark"}
+            />{" "}
+            Dark mode
+          </label>
+        )}
+      </ThemeToggler>
+
       <Header />
       <div className="latest-posts projects">
         <p className="recent">— Projects:</p>
@@ -82,7 +96,7 @@ const About = ({ data }) => {
       </div>
 
       <Footer />
-    </React.Fragment>
+    </>
   )
 }
 

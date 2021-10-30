@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -81,10 +83,30 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
+/* body {
   font-family: "lora";
   font-size: var(--fontSize-1);
   color: var(--color-text);
+} */
+
+body {
+  --bg: white;
+  --textNormal: #222;
+  --textTitle: #222;
+  --textLink: blue;
+  --hr: hsla(0, 0%, 0%, 0.2);
+
+  background-color: var(--bg);
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+
+  --bg: darkslategray;
+  --textNormal: rgba(255, 255, 255, 0.88);
+  --textTitle: white;
+  --textLink: yellow;
+  --hr: hsla(0, 0%, 100%, 0.2);
 }
 
 .footer {
@@ -108,7 +130,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
