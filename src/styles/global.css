@@ -4,6 +4,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
@@ -82,7 +84,7 @@ html {
 }
 
 body {
-  font-family: "lora";
+  font-family: "Poppins", sans-serif;
   font-size: var(--fontSize-1);
   color: var(--color-text);
 }
@@ -108,7 +110,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
   margin-top: var(--spacing-12);
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
@@ -168,7 +170,7 @@ h6 > a {
 
 p {
   font-size: 1.2rem;
-  font-family: "Roboto";
+  font-family: "Poppins", sans-serif;
   line-height: var(--lineHeight-relaxed);
   --baseline-multiplier: 0.179;
   --x-height-multiplier: 0.35;
@@ -433,7 +435,7 @@ nav .logo {
 }
 
 .posts-headline {
-  font-family: "Lora", serif;
+  font-family: "Poppins", sans-serif;
   margin-top: 0;
   font-weight: 400;
 }
