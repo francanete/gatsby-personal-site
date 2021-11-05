@@ -1,0 +1,23 @@
+.projectsWrapper {
+  display: grid;
+  /* grid-template-columns: repeat(2, 1fr); */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.project {
+  padding: 15px;
+  /* border: 1px solid rgba(104, 104, 104, 0.112); */
+  border-radius: 9px;
+  box-shadow: 1px 1px 9px 1px rgba(104, 104, 104, 0.078);
+  background: radial-gradient(
+    circle,
+    rgba(34, 193, 195, 0.19371498599439774) 0%,
+    rgba(253, 187, 45, 0.15449929971988796) 100%
+  );
+}
+
+.projectTitle {
+  font-size: 1.3rem;
+  margin: 0;
+}

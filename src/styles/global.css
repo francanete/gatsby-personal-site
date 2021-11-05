@@ -111,7 +111,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", sans-serif;
-  margin-top: var(--spacing-12);
+  /* margin-top: var(--spacing-12); */
   margin-bottom: var(--spacing-6);
   line-height: var(--lineHeight-tight);
   letter-spacing: -0.025em;
@@ -322,9 +322,12 @@ nav .logo {
 }
 
 .header-wraper {
-  background-color: #ebedf2;
+  background-color: #ebedf27e;
+  /* background: linear-gradient(0deg, rgb(11, 17, 31) 0%, rgb(15, 23, 42) 100%); */
+
   /* height: 50vh; */
   margin-bottom: 5rem;
+  /* color: white; */
 }
 
 .header.section {
@@ -398,7 +401,7 @@ nav .logo {
   font-size: var(--fontSize-4);
   color: var(--color-text);
   margin-bottom: var(--spacing-2);
-  margin-top: var(--spacing-0);
+  /* margin-top: var(--spacing-0); */
 }
 
 .post-list-item header {

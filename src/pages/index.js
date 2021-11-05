@@ -81,7 +81,7 @@ export const pageQuery = graphql`
     }
     projectMd: allMarkdownRemark(
       filter: { frontmatter: { tag: { eq: "project" } } }
-      limit: 3
+      limit: 4
       sort: { fields: frontmatter___date, order: DESC }
     ) {
       nodes {
