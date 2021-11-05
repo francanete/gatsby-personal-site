@@ -2,6 +2,7 @@ import React from "react"
 import { Link, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/Footer"
+import FeaturedProjects from "../components/FeaturedProjects"
 
 const About = ({ data }) => {
   const posts = data.postMd.nodes
@@ -9,42 +10,8 @@ const About = ({ data }) => {
   return (
     <React.Fragment>
       <Header />
-      <div className="latest-posts projects">
-        <p className="recent">— Projects:</p>
-        <ol style={{ listStyle: `none` }}>
-          {projects.map(project => {
-            const title = project.frontmatter.title || project.fields.slug
+      <FeaturedProjects featuredProjects={projects} />
 
-            return (
-              <li key={project.fields.slug}>
-                <article
-                  className="post-list-item"
-                  itemScope
-                  itemType="http://schema.org/Article"
-                >
-                  <header>
-                    <h2>
-                      <Link to={project.fields.slug} itemProp="url">
-                        <span itemProp="headline">{title}</span>
-                      </Link>
-                    </h2>
-                    <small>{project.frontmatter.date}</small>
-                  </header>
-                  <section>
-                    <p
-                      dangerouslySetInnerHTML={{
-                        __html:
-                          project.frontmatter.description || project.excerpt,
-                      }}
-                      itemProp="description"
-                    />
-                  </section>
-                </article>
-              </li>
-            )
-          })}
-        </ol>
-      </div>
       <div className="latest-posts">
         <p className="recent">— Recent articles</p>
         <ol style={{ listStyle: `none` }}>
