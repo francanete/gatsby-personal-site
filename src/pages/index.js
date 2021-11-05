@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/Footer"
 import FeaturedProjects from "../components/FeaturedProjects"
+import IntroBio from "../components/IntroBio"
 
 const About = ({ data }) => {
   const posts = data.postMd.nodes
@@ -10,6 +11,7 @@ const About = ({ data }) => {
   return (
     <React.Fragment>
       <Header />
+      <IntroBio />
       <FeaturedProjects featuredProjects={projects} />
 
       <div className="latest-posts">

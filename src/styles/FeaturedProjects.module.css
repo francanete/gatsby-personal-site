@@ -21,3 +21,19 @@
   font-size: 1.3rem;
   margin: 0;
 }
+
+.header {
+  font-family: "Poppins", sans-serif;
+  /* font-style: italic; */
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 4rem;
+  font-size: 2rem;
+  background: radial-gradient(
+    circle,
+    rgba(40, 75, 99, 0.599) 0%,
+    rgba(238, 240, 235, 0.5) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

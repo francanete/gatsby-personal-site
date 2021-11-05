@@ -5,7 +5,7 @@ import * as feturedProjectsStyles from "../styles/FeaturedProjects.module.css"
 const FeaturedProjects = ({ featuredProjects }) => {
   return (
     <div className="latest-posts projects">
-      <p className="recent">— Featured Projects</p>
+      <p className={feturedProjectsStyles.header}>Featured Projects</p>
       <div className={feturedProjectsStyles.projectsWrapper}>
         {featuredProjects.map(project => {
           const title = project.frontmatter.title || project.fields.slug
