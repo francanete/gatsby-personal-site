@@ -16,7 +16,7 @@
 
 .image {
   grid-area: Image;
-  border-radius: 50%;
+  border-radius: 100px;
   display: flex;
   justify-self: self-start;
   /* object-fit: cover; */
