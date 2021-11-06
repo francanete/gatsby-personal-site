@@ -1,19 +1,19 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
-import * as feturedProjectsStyles from "../styles/FeaturedProjects.module.css"
+import { Link } from "gatsby"
+import * as featuredProjectsStyles from "../styles/FeaturedProjects.module.css"
 
 const FeaturedProjects = ({ featuredProjects }) => {
   return (
     <div className="latest-posts projects">
-      <p className={feturedProjectsStyles.header}>Featured Projects</p>
-      <div className={feturedProjectsStyles.projectsWrapper}>
+      <p className={featuredProjectsStyles.header}>Featured Projects</p>
+      <div className={featuredProjectsStyles.projectsWrapper}>
         {featuredProjects.map(project => {
           const title = project.frontmatter.title || project.fields.slug
 
           return (
             <div
               key={project.fields.slug}
-              className={feturedProjectsStyles.project}
+              className={featuredProjectsStyles.project}
             >
               <article
                 // className="post-list-item"
@@ -25,7 +25,7 @@ const FeaturedProjects = ({ featuredProjects }) => {
                     <Link
                       to={project.fields.slug}
                       itemProp="url"
-                      className={feturedProjectsStyles.projectTitle}
+                      className={featuredProjectsStyles.projectTitle}
                     >
                       <span itemProp="headline">{title}</span>
                     </Link>

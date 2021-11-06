@@ -28,11 +28,17 @@
 }
 
 .btn {
-  background: rgba(222, 222, 222, 0.455);
+  /* background: rgba(222, 222, 222, 0.455); */
+  background: radial-gradient(
+    circle farthest-side at bottom center,
+    #284b63a7 0%,
+    #153243a5 40%
+  );
   padding: 7px 15px;
   border: none;
   border-radius: 9px;
   cursor: pointer;
+  color: white;
 }
 
 .btn:hover {
