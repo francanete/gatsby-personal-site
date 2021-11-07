@@ -33,11 +33,7 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  /* --fontFamily-sans: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --fontFamily-serif: "Merriweather", "Georgia", Cambria, "Times New Roman",
-    Times, serif; */
+
   --font-body: var(--fontFamily-sans);
   --font-heading: var(--fontFamily-sans);
   --fontWeight-normal: 400;
@@ -261,24 +257,24 @@ a.socialLink {
 
 /* Custom classes */
 
-.global-wrapper {
+/* .global-wrapper {
   margin: var(--spacing-0) auto;
   max-width: 700px;
   padding: var(--spacing-10) var(--spacing-5);
-}
+} */
 
 /* .global-wrapper[data-is-root-path="true"] .bio {
   margin-bottom: var(--spacing-20);
 } */
 
-.global-header {
+/* .global-header {
   display: flex;
   margin-bottom: var(--spacing-12);
-}
+} */
 
 /* Addition */
 
-.logo span {
+/* .logo span {
   font-weight: bold;
 }
 
@@ -307,7 +303,7 @@ nav a {
 nav .logo {
   margin-right: auto;
   margin-left: -12px;
-}
+} */
 
 .header {
   display: flex;
@@ -315,7 +311,6 @@ nav .logo {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* margin-top: 20%; */
   vertical-align: center;
   padding: 3rem 0;
   margin-bottom: 5rem;
@@ -323,11 +318,8 @@ nav .logo {
 
 .header-wraper {
   background-color: #ebedf27e;
-  /* background: linear-gradient(0deg, rgb(11, 17, 31) 0%, rgb(15, 23, 42) 100%); */
 
-  /* height: 100vh; */
   margin-bottom: 5rem;
-  /* color: white; */
 }
 
 .header.section {

@@ -6,9 +6,9 @@ import * as HeaderStyles from "../styles/Header.module.css"
 export default function Header() {
   return (
     <>
-      <div className="header-wraper">
+      <div className={HeaderStyles.wrapper}>
         <NavBar />
-        <div className="header">
+        <div className={HeaderStyles.content}>
           <h1 className={HeaderStyles.title}>Hi, I'm Fran!</h1>
           <div className="bio-header">
             <Bio />

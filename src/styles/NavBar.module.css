@@ -1,0 +1,32 @@
+/* .wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: center;
+} */
+
+.nav {
+  display: flex;
+  max-width: 900px;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 20px 5px;
+  margin: 0 auto;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+
+.links a {
+  margin-left: 12px;
+  text-decoration: none;
+  color: black;
+}
+
+.logo span {
+  font-weight: bold;
+  margin-right: auto;
+}

@@ -1,3 +1,23 @@
+.wrapper {
+  /* display: flex;
+  flex-flow: column; */
+  /* vertical-align: center;
+  justify-self: center;
+  align-items: center; */
+  height: 100vh;
+  background-color: rgb(216, 216, 216);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10%;
+  font-size: 1.5rem;
+  padding: 0 20px;
+  text-align: center;
+}
+
 .title {
   font-family: "Poppins", sans-serif;
   /* font-style: italic; */
@@ -16,6 +36,6 @@
 
 @media only screen and (max-width: 620px) {
   .title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
