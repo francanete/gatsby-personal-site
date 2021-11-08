@@ -9,9 +9,11 @@ export default function Header() {
       <div className={HeaderStyles.wrapper}>
         <NavBar />
         <div className={HeaderStyles.content}>
-          <h1 className={HeaderStyles.title}>Hi, I'm Fran!</h1>
-          <div className="bio-header">
-            <Bio />
+          <div className={HeaderStyles.contentItem}>
+            <h1 className={HeaderStyles.title}>Hi, I'm Fran!</h1>
+            <div className="bio-header">
+              <Bio />
+            </div>
           </div>
         </div>
       </div>
