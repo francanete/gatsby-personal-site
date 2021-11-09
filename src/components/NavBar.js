@@ -12,9 +12,15 @@ export default function NavBar() {
         </Link>
       </div>
       <div className={NavBarStyles.links}>
-        <Link to="/about">About</Link>
-        <Link to="/projects">Projects</Link>
-        <Link to="/blog">Articles</Link>
+        <Link activeClassName={NavBarStyles.active} to="/about">
+          About
+        </Link>
+        <Link activeClassName={NavBarStyles.active} to="/projects">
+          Projects
+        </Link>
+        <Link activeClassName={NavBarStyles.active} to="/blog">
+          Articles
+        </Link>
       </div>
     </nav>
     // </div>

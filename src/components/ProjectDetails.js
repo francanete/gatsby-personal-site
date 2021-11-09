@@ -1,5 +1,7 @@
 import React from "react"
 import * as style from "../styles/ProjectDetails.module.css"
+import { FaGithub } from "react-icons/fa"
+import { CgWebsite } from "react-icons/cg"
 
 export default function ProjectDetails({ postData }) {
   const tech = postData.frontmatter.tech
@@ -21,12 +23,14 @@ export default function ProjectDetails({ postData }) {
           className={style.button}
           onClick={() => window.open(github, "_blank")}
         >
+          <FaGithub fill="#fff" size="1rem" />
           GitHub
         </button>
         <button
           className={style.button}
           onClick={() => window.open(live, "_blank")}
         >
+          <CgWebsite fill="#fff" size="1rem" />
           See Live
         </button>
       </div>

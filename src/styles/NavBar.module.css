@@ -15,16 +15,14 @@
   margin: 0 auto;
 }
 
+.active {
+  border-bottom: 1px solid rgb(169, 169, 169);
+}
+
 .logo {
   text-decoration: none;
-  color: rgb(43, 43, 43);
-  background: radial-gradient(
-    circle,
-    rgba(21, 50, 67, 0.811) 0%,
-    rgba(40, 75, 99, 0.859) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: rgb(63, 63, 63);
+
   margin: 5px;
   font-weight: 600;
 }

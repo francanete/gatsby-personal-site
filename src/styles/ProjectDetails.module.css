@@ -11,6 +11,8 @@
 }
 
 .button {
+  display: flex;
+  gap: 8px;
   background: radial-gradient(
     circle farthest-side at bottom center,
     #284b63a7 0%,
