@@ -1,6 +1,7 @@
 import * as React from "react"
 import { Link, graphql } from "gatsby"
 import NavBar from "../components/NavBar"
+import ProjectDetails from "../components/ProjectDetails"
 
 import Bio from "../components/bio"
 import Seo from "../components/seo"
@@ -24,6 +25,8 @@ const BlogPostTemplate = ({ data, location }) => {
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
       />
+
+      {post.frontmatter.tech && <ProjectDetails postData={post} />}
       <div className="posts-wrapper">
         <article
           className="blog-post"
@@ -98,6 +101,10 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+        tag
+        tech
+        github
+        live
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {

@@ -5,6 +5,7 @@ import Footer from "../components/Footer"
 import FeaturedProjects from "../components/FeaturedProjects"
 import IntroBio from "../components/IntroBio"
 import FeaturedPosts from "../components/FeaturedPosts"
+import { FaGithub } from "react-icons/fa"
 
 const About = ({ data }) => {
   const posts = data.postMd.nodes

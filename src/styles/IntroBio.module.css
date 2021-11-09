@@ -19,8 +19,8 @@
   border-radius: 100px;
   display: flex;
   justify-self: self-start;
-  /* object-fit: cover; */
   width: 200px;
+  box-shadow: 2px 2px 7px 1px #1532430f;
 }
 
 .introText {
@@ -28,7 +28,6 @@
 }
 
 .btn {
-  /* background: rgba(222, 222, 222, 0.455); */
   background: radial-gradient(
     circle farthest-side at bottom center,
     #284b63a7 0%,

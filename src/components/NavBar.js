@@ -6,9 +6,9 @@ export default function NavBar() {
   return (
     // <div className={NavBarStyles.wrapper}>
     <nav className={NavBarStyles.nav}>
-      <div className={NavBarStyles.logo}>
-        <Link to="/">
-          <span>FRAN CANETE</span>
+      <div>
+        <Link className={NavBarStyles.logo} to="/">
+          FRAN CANETE
         </Link>
       </div>
       <div className={NavBarStyles.links}>

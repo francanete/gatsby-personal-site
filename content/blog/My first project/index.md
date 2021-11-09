@@ -1,8 +1,11 @@
 ---
-title: My first project
+title: My first project1
 date: "2021-10-01"
 description: "This is my first project and I used GraphLQ"
 tag: "project"
+github: "https://github.com/francanete/gatsby-personal-site"
+tech: ["React", "JavaScript", "MobX", "Hooks"]
+live: "https://github.com/francanete/gatsby-personal-site"
 ---
 
 This is my first post on my new fake blog! How exciting!
