@@ -38,10 +38,7 @@ const Bio = () => {
         applications that truly solve user problems.
       </p>
       {/* <br /> */}
-      <p>
-        Currently working with React, Next.js, Gatsby, Typescript, GraphQL,
-        Node.js
-      </p>
+      <p>Currently working with React, Gatsby, Next.js, Typescript.</p>
     </>
   )
   return (

@@ -4,7 +4,17 @@ date: "2021-10-01"
 description: "This is my first project and I used GraphLQ"
 tag: "project"
 github: "https://github.com/francanete/gatsby-personal-site"
-tech: ["React", "JavaScript", "MobX", "Hooks"]
+tech:
+  [
+    "React",
+    "JavaScript",
+    "MobX",
+    "Hooks",
+    "React",
+    "JavaScript",
+    "MobX",
+    "Hooks",
+  ]
 live: "https://github.com/francanete/gatsby-personal-site"
 ---
 
