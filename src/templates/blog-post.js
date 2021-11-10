@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import NavBar from "../components/NavBar"
 import ProjectDetails from "../components/ProjectDetails"
+import * as style from "../styles/BlogPost.module.css"
 
 import Bio from "../components/bio"
 import Seo from "../components/seo"
@@ -59,14 +60,22 @@ const BlogPostTemplate = ({ data, location }) => {
           >
             <li>
               {previous && (
-                <Link to={previous.fields.slug} rel="prev">
+                <Link
+                  className={style.paginationLink}
+                  to={previous.fields.slug}
+                  rel="prev"
+                >
                   ← {previous.frontmatter.title}
                 </Link>
               )}
             </li>
             <li>
               {next && (
-                <Link to={next.fields.slug} rel="next">
+                <Link
+                  className={style.paginationLink}
+                  to={next.fields.slug}
+                  rel="next"
+                >
                   {next.frontmatter.title} →
                 </Link>
               )}
