@@ -6,13 +6,15 @@ export default function IntroBio() {
   return (
     <div className={IntroBioStyle.wrapper}>
       <div className={IntroBioStyle.container}>
-        <div className={IntroBioStyle.image}>
+        <div>
           <StaticImage
             src="../images/franBio.jpeg"
             alt="fran canete"
+            // imgStyle={{ borderRadius: "50%" }}
             className={IntroBioStyle.image}
           />
         </div>
+
         <div className={IntroBioStyle.introText}>
           <p>
             Intro text about me Intro text about me Intro text about me Intro
