@@ -83,7 +83,6 @@ const BlogPostTemplate = ({ data, location }) => {
           </ul>
         </nav>
       </div>
-
       {/* // </Layout> */}
     </React.Fragment>
   )

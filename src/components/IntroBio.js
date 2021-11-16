@@ -1,21 +1,23 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image"
-import * as IntroBioStyle from "../styles/IntroBio.module.css"
+import * as styles from "../styles/IntroBio.module.css"
 
 export default function IntroBio() {
   return (
-    <div className={IntroBioStyle.wrapper}>
-      <div className={IntroBioStyle.container}>
-        <div>
+    <div className={styles.wrapper}>
+      <div className={styles.container}>
+        <div className={`${styles.item} ${styles.itemImage}`}>
           <StaticImage
             src="../images/franBio.jpeg"
             alt="fran canete"
             // imgStyle={{ borderRadius: "50%" }}
-            className={IntroBioStyle.image}
+            className={styles.image}
           />
         </div>
 
-        <div className={IntroBioStyle.introText}>
+        <div
+          className={`${styles.introText} ${styles.item} ${styles.itemText}`}
+        >
           <p>
             Intro text about me Intro text about me Intro text about me Intro
             text about me Intro text about me Intro text about meIntro text
@@ -23,7 +25,7 @@ export default function IntroBio() {
           <p>
             Intro text about me Intro text about me Intro text about me Intro
           </p>
-          <button className={IntroBioStyle.btn}>Know More</button>
+          <button className={styles.btn}>Know More</button>
         </div>
       </div>
     </div>
