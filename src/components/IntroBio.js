@@ -10,7 +10,6 @@ export default function IntroBio() {
           <StaticImage
             src="../images/franBio.jpeg"
             alt="fran canete"
-            // imgStyle={{ borderRadius: "50%" }}
             className={styles.image}
           />
         </div>
