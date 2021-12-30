@@ -5,6 +5,7 @@ import * as aboutStyles from "../styles/About.module.css"
 import Footer from "../components/Footer"
 import NavBar from "../components/NavBar"
 import { StaticImage } from "gatsby-plugin-image"
+import { Helmet } from "react-helmet"
 
 const About = () => {
   return (

@@ -12,7 +12,11 @@ const About = ({ data }) => {
   const projects = data.projectMd.nodes
   return (
     <>
-      <h1>Coming soon...</h1>
+      <Header />
+      <IntroBio />
+      <FeaturedProjects featuredProjects={projects} />
+      <FeaturedPosts featuredPosts={posts} />
+      <Footer />
     </>
   )
 }
