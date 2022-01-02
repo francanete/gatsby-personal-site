@@ -12,7 +12,7 @@ const BlogIndex = ({ data, location }) => {
     <React.Fragment>
       <NavBar />
       <div className="header section">
-        <span className="section-name">Latest articles</span>
+        <span className="section-name">Articles</span>
         <p>This is a text where I explain what my projects are about.</p>
       </div>
       <div className="posts-wrapper">
