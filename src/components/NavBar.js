@@ -21,6 +21,14 @@ export default function NavBar() {
         <Link activeClassName={NavBarStyles.active} to="/blog">
           Articles
         </Link>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          // activeClassName={NavBarStyles.active}
+          href="https://podcast.francanete.com/"
+        >
+          Podcast
+        </a>
       </div>
     </nav>
     // </div>
