@@ -13,7 +13,7 @@ export default function NavBar() {
       </div>
       <div className={NavBarStyles.links}>
         <Link activeClassName={NavBarStyles.active} to="/about">
-          About
+          About.
         </Link>
         <Link activeClassName={NavBarStyles.active} to="/projects">
           Projects
