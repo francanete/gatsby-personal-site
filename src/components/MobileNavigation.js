@@ -1,7 +1,6 @@
 import React from "react"
 import { NavLinks } from "./NavLinks"
-import { CgMenuGridR } from "react-icons/Cg"
-import { CgClose } from "react-icons/Cg"
+import { CgMenuGridR, CgClose } from "react-icons/Cg"
 import { useState } from "react"
 
 import * as style from "../styles/NavBar.module.css"
