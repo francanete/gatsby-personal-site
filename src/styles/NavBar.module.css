@@ -57,6 +57,11 @@
     display: none;
   }
 
+  .NavBar .links {
+    display: flex;
+    flex-direction: column;
+  }
+
   .NavBar .MobileNavigation {
     display: flex;
     align-items: center;
