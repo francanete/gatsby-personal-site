@@ -1,36 +1,23 @@
 import { Link } from "gatsby"
 import React from "react"
-import * as NavBarStyles from "../styles/NavBar.module.css"
+import * as style from "../styles/NavBar.module.css"
+import { MobileNavigation } from "./MobileNavigation"
+import { Navigation } from "./Navigation"
 
 export default function NavBar() {
   return (
     // <div className={NavBarStyles.wrapper}>
-    <nav className={NavBarStyles.nav}>
+    <div className={style.navContainer}>
       <div>
-        <Link className={NavBarStyles.logo} to="/">
+        <Link className={style.logo} to="/">
           FRAN CANETE
         </Link>
       </div>
-      <div className={NavBarStyles.links}>
-        <Link activeClassName={NavBarStyles.active} to="/about">
-          About.
-        </Link>
-        <Link activeClassName={NavBarStyles.active} to="/projects">
-          Projects
-        </Link>
-        <Link activeClassName={NavBarStyles.active} to="/blog">
-          Articles
-        </Link>
-        <a
-          target="_blank"
-          rel="noopener noreferrer"
-          // activeClassName={NavBarStyles.active}
-          href="https://podcast.francanete.com/"
-        >
-          Podcast
-        </a>
+      <div className={style.NavBar}>
+        <MobileNavigation />
+        <Navigation />
       </div>
-    </nav>
+    </div>
     // </div>
   )
 }

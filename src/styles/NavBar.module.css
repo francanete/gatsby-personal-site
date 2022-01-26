@@ -6,7 +6,7 @@
   align-items: center;
 } */
 
-.nav {
+.navContainer {
   display: flex;
   max-width: 900px;
   justify-content: center;
@@ -36,4 +36,49 @@
 .logo span {
   font-weight: bold;
   margin-right: auto;
+}
+
+.NavBar {
+  display: flex;
+}
+
+.NavBar .MobileNavigation {
+  display: none;
+}
+
+@media (max-width: 860px) {
+  .NavBar .Navigation {
+    display: none;
+  }
+
+  .NavBar .MobileNavigation {
+    display: flex;
+    align-items: center;
+  }
+
+  .NavBar .MobileNavigation .Hamburger {
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    cursor: pointer;
+  }
+
+  .NavBar li {
+    list-style-type: none;
+    margin-bottom: 20px;
+  }
+  .NavBar li:first-child {
+    margin-top: 25px;
+  }
+
+  .NavBar .links {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    padding-right: 20px;
+    background-color: white;
+    opacity: 0.9;
+    width: 100%;
+    text-align: right;
+  }
 }

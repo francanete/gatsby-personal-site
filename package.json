@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "framer-motion": "^6.2.3",
     "gatsby": "^3.10.2",
     "gatsby-plugin-feed": "^3.10.0",
     "gatsby-plugin-gatsby-cloud": "^2.10.0",
