@@ -1,7 +1,10 @@
 import React from "react"
 import { NavLinks } from "./NavLinks"
-import { CgMenuGridR, CgClose } from "react-icons/Cg"
 import { useState } from "react"
+// import { CgMenuGridR, CgClose } from "react-icons/Cg"
+
+import { CgMenuGridR } from "@react-icons/all-files/Cg/CgMenuGridR"
+import { CgClose } from "@react-icons/all-files/Cg/CgClose"
 
 import * as style from "../styles/NavBar.module.css"
 
