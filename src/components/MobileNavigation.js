@@ -30,6 +30,7 @@ export const MobileNavigation = () => {
   return (
     <nav className={style.MobileNavigation}>
       {open ? closeIcon : hamburgerIcon}
+      {/* {open ? "O" : "X"} */}
       <div className={style.linksMobile}></div>
       {open && <NavLinks />}
     </nav>

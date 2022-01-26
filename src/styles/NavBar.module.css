@@ -38,8 +38,14 @@
   margin-right: auto;
 }
 
-.NavBar {
+.NavBar .links {
   display: flex;
+  flex-direction: row;
+}
+
+.NavBar li {
+  list-style-type: none;
+  margin-bottom: 20px;
 }
 
 .NavBar .MobileNavigation {
