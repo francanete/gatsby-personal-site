@@ -16,7 +16,7 @@ export const NavLinks = () => {
         transition={{ delay: 0.05 }}
       >
         <Link activeClassName={style.active} to="/about">
-          About.
+          About
         </Link>
       </motion.li>
       <motion.li initial={animateFrom} animate={animateTo} n={{ delay: 0.1 }}>
