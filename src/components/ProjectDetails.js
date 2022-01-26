@@ -1,7 +1,7 @@
 import React from "react"
 import * as style from "../styles/ProjectDetails.module.css"
-import { FaGithub } from "react-icons/fa"
-import { CgWebsite } from "react-icons/cg"
+// import { FaGithub } from "react-icons/fa"
+// import { CgWebsite } from "react-icons/cg"
 
 export default function ProjectDetails({ postData }) {
   const tech = postData.frontmatter.tech
@@ -18,7 +18,7 @@ export default function ProjectDetails({ postData }) {
           </span>
         ))}
       </div>
-      <div className={style.btnWrapper}>
+      {/* <div className={style.btnWrapper}>
         <button
           className={style.button}
           onClick={() => window.open(github, "_blank")}
@@ -33,7 +33,7 @@ export default function ProjectDetails({ postData }) {
           <CgWebsite fill="#fff" size="1rem" />
           See Live
         </button>
-      </div>
+      </div> */}
     </div>
   )
 }
