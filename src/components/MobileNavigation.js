@@ -6,6 +6,7 @@ import { useState } from "react"
 // import { CgMenuGridR } from "@react-icons/all-files/Cg/CgMenuGridR"
 // import { CgClose } from "@react-icons/all-files/Cg/CgClose"
 import { FaTh } from "@react-icons/all-files/fa/FaTh"
+import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose"
 
 import * as style from "../styles/NavBar.module.css"
 
@@ -15,17 +16,17 @@ export const MobileNavigation = () => {
   const hamburgerIcon = (
     <FaTh
       className={style.Hamburger}
-      size="30px"
-      color="black"
+      size="25px"
+      color="#4d4d4d"
       onClick={() => setOpen(!open)}
     />
   )
 
   const closeIcon = (
-    <FaTh
+    <AiOutlineClose
       className={style.Hamburger}
-      size="30px"
-      color="black"
+      size="28px"
+      color="#4d4d4d"
       onClick={() => setOpen(!open)}
     />
   )
