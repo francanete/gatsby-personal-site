@@ -9,6 +9,7 @@ import { FaTh } from "@react-icons/all-files/fa/FaTh"
 import { AiOutlineClose } from "@react-icons/all-files/ai/AiOutlineClose"
 
 import * as style from "../styles/NavBar.module.css"
+import Footer from "./Footer"
 
 export const MobileNavigation = () => {
   const [open, setOpen] = useState(false)
@@ -34,9 +35,14 @@ export const MobileNavigation = () => {
   return (
     <nav className={style.MobileNavigation}>
       {open ? closeIcon : hamburgerIcon}
-      {/* {open ? "O" : "X"} */}
-      <div className={style.linksMobile}></div>
-      {open && <NavLinks />}
+      {open && (
+        <div className={style.navContainer}>
+          <div className={style.linksMobile}>
+            {open ? closeIcon : hamburgerIcon}
+            {open && <NavLinks />}
+          </div>
+        </div>
+      )}
     </nav>
   )
 }
